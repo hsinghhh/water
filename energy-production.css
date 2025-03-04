@@ -366,21 +366,13 @@ li a:hover {
 }
 
 .card1 {
-    background-image: url("evaporation.jpeg");
     object-fit: cover;
 }
 
 .card2 {
-    background-image: url("condensation.jpg");
     object-fit: cover;
 }
 
 .card3 {
-    background-image: url("precipitation.jpg");
-    object-fit: cover;
-}
-
-.card4 {
-    background-image: url("accumulation.jpg");
     object-fit: cover;
 }
