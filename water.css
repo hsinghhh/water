@@ -1,0 +1,386 @@
+@font-face {
+    font-family: milkyway;
+    src: url("milkyway.ttf");
+}
+
+@font-face {
+    font-family: recoleta;
+    src: url("recoleta.otf");
+} 
+
+@font-face {
+    font-family: recoletabold;
+    src: url("recoletabold.otf");
+} 
+
+@font-face {
+    font-family: recoletablack;
+    src: url("recoletablack.otf");
+} 
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2a7a96;
+    font-family: "recoletabold";
+    font-size: 30px;
+    letter-spacing: 0em;
+    position: relative;
+    top: -30px
+}
+
+.bg {
+    background-image: url("bg.jpg");
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center;
+    padding-top: 0;
+    margin-top: -30px;
+    margin-left: -8px;
+    margin-right: -8px;
+    overflow: hidden;
+}
+
+body {
+    background: #d7f4ff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: "recoleta";
+    font-weight: normal;
+    overflow: hidden;
+    position: relative;
+}
+
+li{
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: #2a7a96;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #b7e8fa;
+}
+
+.text {
+    color: #2a7a96;
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+    font-family: "recoleta";
+    padding-top: 0em;
+    padding-bottom: 0.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    font-weight: normal;
+    animation:
+        fadein 3s;
+}
+
+.mid {
+    color: #2a7a96;
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: normal;
+    font-family: "recoletabold";
+    padding-top: 0em;
+    padding-left: 3em;
+    padding-right: 3em;
+    font-weight: normal;
+    animation:
+        fadein 3s;
+}
+
+.image-right {
+    max-width: 30%;
+    float: right;
+    display: flex;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-right: 0em; 
+    margin-left: 0em;
+    animation:
+        fadein 5s;
+}
+
+.image-left {
+    max-width: 35%;
+    height: auto;
+    margin: 0;
+    padding: 50px;
+    float: left;
+    margin-right: 0em; 
+    margin-left: 0em;
+    animation:
+        fadein 5s;
+}
+
+.textleft {
+    color: #2a7a96;
+    font-size: 18px;
+    text-align: left;
+    font-weight: normal;
+    font-family: "recoleta";
+    flex: 1;
+    animation:
+        fadein 3s;
+}
+
+.textright {
+    color: #2a7a96;
+    font-size: 18px;
+    text-align: right;
+    font-weight: normal;
+    font-family: "recoleta";
+    font-weight: normal;
+    animation:
+        fadein 3s;
+}
+
+.textleft, .textright {
+    padding-left: 0em; 
+    padding-right: 0em;
+}
+
+.subheading {
+    color: #2a7a96;
+    font-size: 2em;
+    text-align: center;
+    font-weight: normal;
+    font-family: "recoletabold";
+    padding-top: 0em;
+    padding-left: 3em;
+    padding-right: 3em;
+    font-weight: normal;
+    animation:
+        fadein 5s;
+}
+
+.subheadingleft {
+    color: #2a7a96;
+    font-size: 2em;
+    text-align: left;
+    font-weight: normal;
+    font-family: "recoletabold";
+    padding-top: 0em;
+    padding-left: 3em;
+    padding-right: 3em;
+    font-weight: normal;
+    animation:
+        fadein 5s;
+}
+
+.subheadingright {
+    color: #2a7a96;
+    font-size: 2em;
+    text-align: right;
+    font-weight: normal;
+    font-family: "recoletabold";
+    padding-top: 0em;
+    padding-left: 3em;
+    padding-right: 3em;
+    font-weight: normal;
+    animation:
+        fadein 5s;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.container {
+    display: flex;
+    align-items: stretch; 
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.left .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sectionone {
+    height: 10vh;
+}
+
+.sectiontwo {
+    height: 130vh;
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 3s;
+}
+
+.sectiontwo.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.sectionthree {
+    height: 200vh;
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 3s;
+}
+
+.sectionthree.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.sectionfour {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    margin: 50px 0;
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 3s;
+}
+
+.sectionfour.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.sectionfive {
+    height: 70vh;
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 3s;
+}
+
+.sectionfive.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.sectionsix {
+    height: 30vh;
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 3s;
+}
+
+.sectionsix.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.sevencontainer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    max-width: 1400px;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    height: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center;
+}
+
+.card:hover {
+    flex: 10;
+    height: 130px;
+    z-index: 10;
+}
+
+.card-container:hover .card:not(:hover) {
+    flex: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.extra {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    color: #2a7a96;
+    font-size: 18px;
+    font-family: "recoleta";
+    font-weight: normal;
+}
+
+.card:hover .extra {
+    opacity: 1;
+    max-height: 9000px;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card1 {
+    background-image: url("evaporation.jpeg");
+    object-fit: cover;
+}
+
+.card2 {
+    background-image: url("condensation.jpg");
+    object-fit: cover;
+}
+
+.card3 {
+    background-image: url("precipitation.jpg");
+    object-fit: cover;
+}
+
+.card4 {
+    background-image: url("accumulation.jpg");
+    object-fit: cover;
+}
